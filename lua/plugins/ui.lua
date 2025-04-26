@@ -24,14 +24,8 @@ return {
         "akinsho/bufferline.nvim",
         url = "https://bgithub.xyz/akinsho/bufferline.nvim",
         dependencies = "nvim-tree/nvim-web-devicons",
-        config = function ()
-            local bf = require("bufferline")
-            bf.setup {
-                style_preset = {
-                    bf.style_preset.no_italic,
-                    bf.style_preset.no_bold,
-                }
-            }
+        config = function()
+            require('bufferline').setup {}
         end
-    }
+        }
 }
